@@ -8,16 +8,164 @@
     android:background="#FFFFFFFF">
 
     <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="356dp"
-        android:text="sample2"
+        android:id="@+id/skill_1"
+        android:layout_width="136dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="108dp"
+        android:text="重擊       等級:"
+        android:textColor="#FF000000"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textColor="#FF000000"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/skill_3"
+        android:layout_width="132dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:text="爆擊星   等級:"
+        android:textColor="#FF000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skill_2" />
+
+    <TextView
+        android:id="@+id/skill_2"
+        android:layout_width="137dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="60dp"
+        android:text="點金手   等級:"
+        android:textColor="#FF000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/skill_1"
+        app:layout_constraintTop_toBottomOf="@+id/skill_1" />
+
+    <Button
+        android:id="@+id/skill_1_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="96dp"
+        android:text="升級花費"
+        app:layout_constraintStart_toStartOf="@+id/skill_1_lv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/skill_2_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="升級花費"
+        app:layout_constraintStart_toStartOf="@+id/skill_1_update"
+        app:layout_constraintTop_toBottomOf="@+id/skill_1_update" />
+
+    <TextView
+        android:id="@+id/skill_2_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:textColor="@color/black"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/skill_2_update"
+        app:layout_constraintTop_toBottomOf="@+id/skill_2_update" />
+
+    <TextView
+        android:id="@+id/skill_3_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:textColor="@color/black"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/skill_3_update"
+        app:layout_constraintTop_toBottomOf="@+id/skill_3_update" />
+
+    <TextView
+        android:id="@+id/skill_1_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:textColor="@color/black"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/skill_1_update"
+        app:layout_constraintTop_toBottomOf="@+id/skill_1_update" />
+
+    <TextView
+        android:id="@+id/skill_2_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#FF000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/skill_2"
+        app:layout_constraintTop_toTopOf="@+id/skill_2" />
+
+    <TextView
+        android:id="@+id/skill_3_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="#FF000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/skill_3"
+        app:layout_constraintTop_toTopOf="@+id/skill_3" />
+
+    <TextView
+        android:id="@+id/skill_1_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="108dp"
+        android:textColor="#FF000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/skill_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/skill_3_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="升級花費"
+        app:layout_constraintStart_toStartOf="@+id/skill_2_update"
+        app:layout_constraintTop_toBottomOf="@+id/skill_2_update" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="51dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/money" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
